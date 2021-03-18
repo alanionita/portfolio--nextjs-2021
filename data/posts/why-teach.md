@@ -1,7 +1,7 @@
 ---
 id: c370c6a2-6a44-4028-8aab-a07fad350692
 title: Why Teach
-desc: ''
+desc: ""
 updated: 1616083529943
 created: 1616081237916
 url: why-teach
@@ -11,22 +11,22 @@ url: why-teach
 
 I've been asked this question a lot over the years, but never really dug into why.
 
-Whenever I've been asked about it I've just shrugged and confirmed that I just like it. And that answer works for most conversations, but really - why do I like it? 
+Whenever I've been asked about it I've just shrugged and confirmed that I just like it. And that answer works for most conversations, but really - why do I like it?
 
 ### Lessons learned from teaching
 
-* teaching/mentoring others is hard because everyone is different - your role as a mentor is to quickly figure out the person and their learning style, and adjust your delivery
-* through teaching you learn more - the more people you teach the more you have access to different angles of looking at a problem and if you pay attention you'll learn something from that
-* teaching is humbling - you might not know the answer so it makes you realise how much more there is to learn
-* mentoring / teaching is rewarding - you get to see aspiring developers grow to junior developers in real time
-* teaching improves your memory of core basics, core basics improve your overall systems knowledge, and improved systems knowledge helps you with architecting systems and troubleshooting
-* your communication improves through teaching because of repetition and explaining the same concepts in different ways
+- teaching/mentoring others is hard because everyone is different - your role as a mentor is to quickly figure out the person and their learning style, and adjust your delivery
+- through teaching you learn more - the more people you teach the more you have access to different angles of looking at a problem and if you pay attention you'll learn something from that
+- teaching is humbling - you might not know the answer so it makes you realise how much more there is to learn
+- mentoring / teaching is rewarding - you get to see aspiring developers grow to junior developers in real time
+- teaching improves your memory of core basics, core basics improve your overall systems knowledge, and improved systems knowledge helps you with architecting systems and troubleshooting
+- your communication improves through teaching because of repetition and explaining the same concepts in different ways
 
 ### My Teaching Timeline
 
 How long have I mentored or taught or advised on various topics?
 
-During university I had chance to do a work placement in corporate sales. Up to then, my big dream was to be a CEO and move to Japan. My role was to sell HR and legal insurance so a big part of the pitch was fact finding about the business and seeing if there could areas where my coverage packages could help. 
+During university I had chance to do a work placement in corporate sales. Up to then, my big dream was to be a CEO and move to Japan. My role was to sell HR and legal insurance so a big part of the pitch was fact finding about the business and seeing if there could areas where my coverage packages could help.
 
 I very rarely oversold the package and was still the best in my hiring group. I cared about businesses and really wanted to learn about every single one and see where the product could actually help. A great job in hindsight for a business management student with a love of strategy.
 
@@ -34,7 +34,7 @@ That placement changed me for the better. I realised soon after that I wanted to
 
 Some of these relationships turned out great and some didn't, but it was a great use of time.
 
-I stopped doing all this pro bono consulting once I graduated from uni and got into my first job, as mixed product/project manager at a small digital agency.
+I stopped doing all this pro-bono consulting once I graduated from uni and got into my first job, as mixed product/project manager at a small digital agency.
 
 I managed the agencies retainer client so maintaining the client relationships was key. I achieved this by learning about their business, learning about their problem, and then figuring out what data I can find to plan out the solutions. It's unusual for a project manager to do this, which is why I talk about it as a mixed product/project role.
 
