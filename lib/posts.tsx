@@ -4,39 +4,30 @@ import matter from "gray-matter";
 import remark from "remark";
 import html from "remark-html";
 import { Posts, Post } from "../types/posts";
+import { dateSortDecending } from "../lib/utils";
 
 const postsDirectory = path.join(process.cwd(), "data", "posts");
 
 export function getSortedPosts(): Posts {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
-  const allPosts = fileNames.map(
-    (fileName: string): Post => {
-      // Remove ".md" from file name to get id
-      const id = fileName.replace(/\.md$/, "");
+  const allPosts = fileNames.map((fileName: string) => {
+    // Remove ".md" from file name to get id
+    const id = fileName.replace(/\.md$/, "");
 
-      // Read markdown file as string
-      const fullPath = path.join(postsDirectory, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
+    // Read markdown file as string
+    const fullPath = path.join(postsDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
 
-      // Use gray-matter to parse the post metadata section
-      const matterResult = matter(fileContents);
-
-      // Combine the data with the id
-      return {
-        id,
-        ...matterResult.data,
-      } as Post;
-    }
-  );
-  // Sort posts by date
-  return allPosts.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents);
+    return {
+      id,
+      ...matterResult.data,
+    } as Post;
   });
+  // Sort posts by date
+  return allPosts.sort(dateSortDecending);
 }
 
 export function getAllPostIds() {
