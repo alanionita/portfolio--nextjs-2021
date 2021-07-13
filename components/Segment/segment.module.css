@@ -116,7 +116,6 @@
 .postHeadline {
   height: auto;
   display: block;
-  /* justify-content: center; */
   align-items: center;
   padding-top: var(--padding);
   padding-left: calc(calc(100% - var(--post-max-width)) / 2);
@@ -159,7 +158,6 @@
   max-width: var(--post-max-width);
   background-color: #f1f1f1;
   margin: 0;
-  /* text-align: left; */
 }
 .post > h2,
 .post > h3,
@@ -199,12 +197,6 @@
   font-weight: 400;
 }
 
-/* @media (min-width: 900px) {
-  .post > p {
-    width: 64%;
-  }
-} */
-
 .post > p {
   margin-bottom: calc(var(--text-padding));
 }
@@ -212,13 +204,15 @@
 .post > p:last-child {
   margin-bottom: 0;
 }
-
+.post > h2 > a,
+.post > h3 > a,
 .post > p > a {
   color: rgb(0, 52, 89);
   text-decoration: unset;
   font-weight: 600;
 }
-
+.post > h2 > a:hover,
+.post > h3 > a:hover,
 .post > p > a:hover {
   text-decoration: underline;
 }
@@ -236,11 +230,6 @@
   font-weight: 400;
   font-style: italic;
 }
-/* @media (min-width: 900px) {
-  .post > blockquote {
-    width: 64%;
-  }
-} */
 
 .post > blockquote:before {
   content: "\201C";
@@ -255,10 +244,4 @@
   color: #003459;
   text-align: center;
 }
-/* .post > blockquote:after {
-  content: "\2013 \2003"attr(cite);
-  display: block;
-  text-align: right;
-  font-size: 0.875em;
-  color: #e74c3c;
-} */
+
