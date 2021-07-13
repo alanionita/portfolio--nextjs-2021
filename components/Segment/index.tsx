@@ -6,16 +6,19 @@ export const Segment: FunctionComponent<TSegmentProps> = ({
   contentHtml,
   children,
   type,
-}) => (
-  <>
-    {contentHtml && (
-      <section
-        className={styles[type] || styles.main}
-        dangerouslySetInnerHTML={{ __html: contentHtml }}
-      />
-    )}
-    {!contentHtml && (
-      <section className={styles[type] || styles.main}>{children}</section>
-    )}
-  </>
-);
+}) => {
+  const style = styles[type] || styles.main
+  return (
+    <>
+      {contentHtml && (
+        <section
+          className={style}
+          dangerouslySetInnerHTML={{ __html: contentHtml }}
+        />
+      )}
+      {!contentHtml && (
+        <section className={style}>{children}</section>
+      )}
+    </>
+  );
+};

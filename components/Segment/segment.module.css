@@ -115,51 +115,55 @@
 
 .postHeadline {
   height: auto;
-  display: flex;
-  flex-flow: column;
-  padding: var(--padding);
-  padding-top: calc(var(--padding) * 2);
+  display: block;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: var(--padding);
+  padding-left: calc(calc(100% - var(--post-max-width)) / 2);
   padding-bottom: calc(var(--padding) / 2);
-  justify-content: center;
-  align-items: flex-start;
   background-color: #003459;
   text-align: left;
   color: #cecece;
+  width: 100vw;
 }
 
 .postHeadline > h1 {
   margin: 0;
   padding: 0;
-  width: 75%;
   text-align: left;
   font-weight: bold;
   font-size: var(--fluid-type);
   line-height: 1.2em;
-  margin-bottom: calc(var(--padding) / 4);
+  margin-bottom: calc(var(--padding) / 12);
+  max-width: var(--post-max-width);
 }
 
 .postHeadline > time {
   margin: 0;
   padding: 0;
-  width: 75%;
   text-align: left;
   font-weight: bold;
   font-size: var(--fluid-type-post);
   font-style: italic;
+  max-width: var(--post-max-width);
 }
 
 .post {
   height: auto;
   display: flex;
   flex-flow: column;
-  padding: var(--padding);
+  padding-bottom: var(--padding);
   padding-top: calc(var(--padding) / 2);
   justify-content: center;
   align-items: flex-start;
+  max-width: var(--post-max-width);
   background-color: #f1f1f1;
-  text-align: left;
+  margin: 0;
+  /* text-align: left; */
 }
-.post > h2 {
+.post > h2,
+.post > h3,
+.post > h4 {
   width: 75%;
   text-align: left;
   font-weight: bold;
@@ -195,11 +199,11 @@
   font-weight: 400;
 }
 
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
   .post > p {
     width: 64%;
   }
-}
+} */
 
 .post > p {
   margin-bottom: calc(var(--text-padding));
@@ -232,11 +236,11 @@
   font-weight: 400;
   font-style: italic;
 }
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
   .post > blockquote {
     width: 64%;
   }
-}
+} */
 
 .post > blockquote:before {
   content: "\201C";

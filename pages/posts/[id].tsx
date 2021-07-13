@@ -7,13 +7,13 @@ import { Segment } from "../../components/Segment";
 import { getAllPostIds, getPost } from "../../lib/posts";
 import { TPostProps } from "../../types/props";
 import segmentStyles from "../../components/Segment/segment.module.css";
-
+import styles from "./posts.module.css";
 const Post: FunctionComponent<TPostProps> = ({ Post }) => (
   <Layout home={false}>
     <Head>
       <title>{Post.title}</title>
     </Head>
-    <article>
+    <article className={styles.article}>
       <Segment type='postHeadline'>
         <h1>{Post.title}</h1>
         <Date dateString={Post.created} />
