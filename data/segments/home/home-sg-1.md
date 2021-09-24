@@ -7,6 +7,6 @@ I'm Alan Ionita
 
 Software Developer from Manchester. ☀️
 
-Currently working at [Mission Labs](https://www.missionlabs.co.uk/)
+Currently working at [Perceptual Robotics](https://www.perceptual-robotics.com)
 
-Building clever contact center solutions.
+Building modern digital products for the energy sector using robotics, AI, and the AWS cloud.
