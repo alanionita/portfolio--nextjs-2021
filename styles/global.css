@@ -26,3 +26,14 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* Styling code blocks */
+pre code {
+  font-size: var(--fluid-type-code);
+  font-weight: 400;
+  text-align: left;
+}
+
+pre {
+  width: 100%;
+}

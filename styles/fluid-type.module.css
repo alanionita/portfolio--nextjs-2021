@@ -2,4 +2,5 @@
   --fluid-type: min(max(1rem, 4vw), 40px);
   --fluid-type-h2: min(max(1rem, 4vw), 32px);
   --fluid-type-post: min(max(1rem, 4vw), 24px);
+  --fluid-type-code: min(max(1rem, 4vw), 16px);
 }
