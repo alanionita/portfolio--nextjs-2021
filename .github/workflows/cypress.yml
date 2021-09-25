@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -14,7 +14,8 @@ jobs:
         with:
           browser: chrome
           headless: true
-          config: pageLoadTimeout=100000,baseUrl=http://localhost:3000
+          env: host=https://alanionita.github.io
+          
       - uses: actions/upload-artifact@v1
         if: failure()
         with:
