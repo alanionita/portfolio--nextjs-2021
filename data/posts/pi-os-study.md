@@ -105,7 +105,7 @@ Skills learned through using the OS are not as transferable as Ubuntu, but you c
 
 The setup on the site is a lot more complex that what I came up with
 
-```bash
+```shell
 // 1. Download the tar from the Alpine site
 
 // 2. Create a bootable SD card using PI imager

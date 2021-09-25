@@ -3,7 +3,7 @@ id: "home-sg-3"
 type: "turquise"
 ---
 
-Teaching Assistant at [The University of Manchester](https://www.manchester.ac.uk/study/cpd/coding-bootcamp/)
+Instructor at [The University of Manchester](https://www.manchester.ac.uk/study/cpd/coding-bootcamp/)
 
 Top UK university and the birthplace of the modern computer.
 

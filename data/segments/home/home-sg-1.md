@@ -9,4 +9,4 @@ Software Developer from Manchester. ☀️
 
 Currently working at [Perceptual Robotics](https://www.perceptual-robotics.com)
 
-Building modern digital products for the energy sector using robotics, AI, and the AWS cloud.
+Building industry 4.0 products.
