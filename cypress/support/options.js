@@ -6,5 +6,5 @@ export const sizes = [
   [1920, 1080],
 ];
 
-export const pages = ["", "blog", "posts/pi-os-study"];
+export const pages = ["/", "blog", "posts/pi-os-study"];
 export const scrubbedElements = [".list_main__1p3RB"];
