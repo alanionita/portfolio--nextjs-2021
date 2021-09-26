@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { read } from "gray-matter";
-import remark from "remark";
+import {remark} from "remark";
 import html from "remark-html";
 import { Posts, Post } from "../types/posts";
 import { dateSortDecending } from "../lib/utils";
