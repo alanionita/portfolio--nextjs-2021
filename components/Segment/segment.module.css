@@ -3,13 +3,14 @@
   display: flex;
   flex-flow: column;
   background-color: var(--color-dark-blue);
+  padding-top: 15vh;
+  padding-bottom: 15vh;
 }
 
 .indigo {
   composes: main;
   height: auto;
   padding-top: 35vh;
-  padding-bottom: 15vh;
 }
 
 .indigo > p {
@@ -28,12 +29,10 @@
 
 .navy {
   composes: main;
+  height: auto;
   flex-flow: column nowrap;
   align-items: flex-end;
   justify-content: center;
-  height: auto;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
   background-color: var(--color-navy);
   color: white;
 }
@@ -53,8 +52,6 @@
   background-color: var(--color-turquise);
   text-align: right;
   height: auto;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
 }
 .turquise > p {
   margin: 0;
@@ -75,12 +72,16 @@
 }
 
 .blog {
+  composes: main;
   height: auto;
-  display: flex;
-  flex-flow: column;
-  padding-top: 20vh;
-  padding-bottom: var(--padding);
-  background-color: var(--color-dark-blue);
+  padding-top: 35vh;
+}
+
+@media screen and (max-width: 700px) {
+  .blog {
+    padding-top: 12vh;
+    padding-bottom: 8vh;
+  }
 }
 
 .blog > p {

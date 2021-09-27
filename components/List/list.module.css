@@ -3,12 +3,13 @@
   flex-flow: column;
   justify-content: flex-start;
   height: auto;
+  padding: 0;
   margin: 0;
-  padding: var(--padding);
-  background-color: #007ea7;
   list-style: none;
   text-align: right;
+  max-width: var(--post-max-width);
 }
+
 .item {
   display: flex;
   flex-flow: column;
@@ -28,4 +29,22 @@
 
 .item > p {
   color: #003459;
+}
+
+.maxWidth {
+  max-width: var(--post-max-width);
+  width: -webkit-fill-available;
+  margin: 0 auto;
+  padding: var(--padding) 0;
+}
+
+@media screen and (max-width: 850px) {
+  .maxWidth {
+    padding: var(--padding) var(--padding);
+  }
+}
+
+.wrapper {
+  background-color: var(--color-turquise);
+  width: -webkit-fill-available;
 }
