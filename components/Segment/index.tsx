@@ -7,18 +7,20 @@ export const Segment: FunctionComponent<TSegmentProps> = ({
   children,
   type,
 }) => {
-  const style = styles[type] || styles.main
+  const style = styles[type] || styles.main;
   return (
     <>
       {contentHtml && (
-        <section
-          className={style}
-          dangerouslySetInnerHTML={{ __html: contentHtml }}
-        />
+        <div className={styles["inner--" + type]}>
+          <div className={styles.maxWidth}>
+            <section
+              className={style}
+              dangerouslySetInnerHTML={{ __html: contentHtml }}
+            />
+          </div>
+        </div>
       )}
-      {!contentHtml && (
-        <section className={style}>{children}</section>
-      )}
+      {!contentHtml && <section className={style}>{children}</section>}
     </>
   );
 };

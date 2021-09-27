@@ -2,18 +2,11 @@
   height: 100vh;
   display: flex;
   flex-flow: column;
-  background-color: #00171f;
-  padding-left: var(--padding);
-  padding-right: var(--padding);
+  background-color: var(--color-dark-blue);
 }
 
 .indigo {
-  height: 100vh;
-  display: flex;
-  flex-flow: column;
-  background-color: #00171f;
-  padding-left: var(--padding);
-  padding-right: var(--padding);
+  composes: main;
   height: auto;
   padding-top: 35vh;
   padding-bottom: 15vh;
@@ -23,7 +16,7 @@
   margin: 0;
   padding: 0;
   width: auto;
-  color: #00a8e8;
+  color: var(--color-light-blue);
   text-align: left;
   font-weight: bold;
   font-size: var(--fluid-type);
@@ -34,41 +27,30 @@
 }
 
 .navy {
-  height: 100vh;
-  display: flex;
-  flex-flow: column;
-  background-color: #00171f;
-  padding-left: var(--padding);
-  padding-right: var(--padding);
-  display: flex;
+  composes: main;
   flex-flow: column nowrap;
   align-items: flex-end;
   justify-content: center;
   height: auto;
   padding-top: 15vh;
   padding-bottom: 15vh;
-  background-color: #003459;
+  background-color: var(--color-navy);
   color: white;
 }
 .navy > p {
   margin: 0;
   padding: 0;
   width: auto;
-  color: #ffffff;
+  color: white;
   text-align: right;
   font-weight: bold;
   font-size: var(--fluid-type);
 }
 
 .turquise {
-  height: 100vh;
-  display: flex;
-  flex-flow: column;
-  background-color: #00171f;
-  padding-left: var(--padding);
-  padding-right: var(--padding);
+  composes: main;
   justify-content: flex-start;
-  background-color: #007ea7;
+  background-color: var(--color-turquise);
   text-align: right;
   height: auto;
   padding-top: 15vh;
@@ -78,7 +60,7 @@
   margin: 0;
   padding: 0;
   width: auto;
-  color: #003459;
+  color: var(--color-navy);
   text-align: left;
   font-weight: bold;
   font-size: var(--fluid-type);
@@ -96,18 +78,16 @@
   height: auto;
   display: flex;
   flex-flow: column;
-  padding-left: var(--padding);
-  padding-right: var(--padding);
   padding-top: 20vh;
   padding-bottom: var(--padding);
-  background-color: #00171f;
+  background-color: var(--color-dark-blue);
 }
 
 .blog > p {
   margin: 0;
   padding: 0;
   width: auto;
-  color: #00a8e8;
+  color: var(--color-light-blue);
   text-align: right;
   font-weight: bold;
   font-size: var(--fluid-type);
@@ -120,9 +100,9 @@
   padding-top: var(--padding);
   padding-left: calc(calc(100% - var(--post-max-width)) / 2);
   padding-bottom: calc(var(--padding) / 2);
-  background-color: #003459;
+  background-color: var(--color-navy);
   text-align: left;
-  color: #cecece;
+  color: var(--color-grey);
   width: 100vw;
 }
 
@@ -156,7 +136,7 @@
   justify-content: center;
   align-items: flex-start;
   max-width: var(--post-max-width);
-  background-color: #f1f1f1;
+  background-color: var(--color-off-white);
   margin: 0;
 }
 .post > h2,
@@ -174,7 +154,7 @@
   padding: 0;
   padding-left: 5%;
   width: 75%;
-  color: #003459;
+  color: var(--color-navy);
   text-align: left;
   font-weight: bold;
   font-size: var(--fluid-type-post);
@@ -190,7 +170,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  color: #003459;
+  color: var(--color-navy);
   text-align: left;
   font-weight: bold;
   font-size: var(--fluid-type-post);
@@ -225,7 +205,7 @@
   padding: 1.5em 0 0.5em;
   margin: 1.5em 0;
   position: relative;
-  color: #003459;
+  color: var(--color-navy);
   font-size: var(--fluid-type-post);
   font-weight: 400;
   font-style: italic;
@@ -237,11 +217,43 @@
   top: 0em;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: white;
   width: 3rem;
   height: 2rem;
   font: 6em/1.08em "PT Sans", sans-serif;
-  color: #003459;
+  color: var(--color-navy);
   text-align: center;
 }
 
+.maxWidth {
+  max-width: var(--post-max-width);
+  width: -webkit-fill-available;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  .maxWidth {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+  }
+}
+
+.inner {
+}
+
+.inner--indigo {
+  composes: inner;
+  background-color: var(--color-dark-blue);
+}
+
+.inner--navy {
+  composes: inner;
+  /* background-color: var(--color-dark-blue); */
+  background-color: var(--color-navy);
+}
+
+.inner--turquise {
+  composes: inner;
+  /* background-color: var(--color-dark-blue); */
+  background-color: var(--color-turquise);
+}
