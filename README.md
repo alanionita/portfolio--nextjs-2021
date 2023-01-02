@@ -6,35 +6,13 @@ A porfolio site built with NextJS
 
 <!-- ## User stories 
 
-Audience: shoe shop employee would like to manage all the orders happening on the shop floor, with a connection to the store room.
+Audience: ****
 
 ```
-As a shop assistant I can see a list of the order queue, so that I can see the orders as they are placed (latest first)
+As a ****** I can ********
 ```
 
-```
-As a shop assistant I can filter the list by order status, so that I can check up orders as customers ask
-```
-
-```
-As a shop assistant I can remove the filter, so that I can see the full list
-```
-
-```
-As a shop shop manager I want the app to rotate panels, so that I reuse the app as a display for customers
-```
-
-```
-As a shop shop manager I expect the app to feature an API, so that orders are securely stored in the cloud
-```
-
-```
-As a shop shop manager I expect the app to feature an API, so that new orders can be created
-```
-
-```
-As a shop shop manager I expect the app to feature an API, so that existing orders can be removed
-``` -->
+-->
 
 ## Architecture and Rationale
 

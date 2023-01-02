@@ -11,7 +11,7 @@ export const List: FunctionComponent<TListProps> = ({ list }) => (
         <div className={styles.maxWidth}>
           <ul className={styles.main}>
             {list.map(({ id, title, url, created }) => (
-              <li className={styles.item} key={id}>
+              <li className={styles.item} key={id} data-type="url">
                 <Link href="/posts/[id]" as={`/posts/${url}`}>
                   <a>{title}</a>
                 </Link>
