@@ -1,9 +1,10 @@
+---
 id: 76b6d520-1af3-4484-b5fb-8068b43f1417
 url: code-highlight
 title: Code syntax tester
 desc: ''
-updated: 27/07/2024
-created: 27/07/2024
+updated: 1616156869783
+created: 1616156869783
 ---
 
 ## Testing code syntax highlighting
