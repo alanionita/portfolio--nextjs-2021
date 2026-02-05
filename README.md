@@ -68,6 +68,8 @@ $ npm i
 ## Developing
 -------------
 
+> Note: Requires a .env.local with REPO_NAME=
+
 To run the app locally, execute ⬇️. If this is the first time running the app you may need to run the build script first.
 
 ```
