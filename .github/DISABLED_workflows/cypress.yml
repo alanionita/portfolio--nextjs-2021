@@ -21,4 +21,4 @@ jobs:
         if: failure()
         with:
           name: fails
-          path: cypress/    
+          path: cypress/
