@@ -1,6 +1,6 @@
 # Portfolio site
 
-![](./docs/site-screenshot.png)
+![](./_docs/site-screenshot.png)
 
 A porfolio site built with NextJS
 
